@@ -1,0 +1,44 @@
+.hero {
+    @apply bg-[url("/hero1.svg")] bg-cover bg-center bg-no-repeat h-[620px];
+  }
+  @media screen and (max-width: 374px) {
+    .hero {
+      @apply bg-[url("/hero2.svg")] bg-cover bg-center bg-no-repeat h-[180px] w-[290px];
+    }
+    .hero {
+      @apply shadow-[0px_4px_65px_1px_#00072b36];
+    }
+  }
+  @media screen and (min-width: 375px) and (max-width: 480px) {
+    .hero {
+      @apply bg-[url("/hero2.svg")] bg-cover bg-center bg-no-repeat h-[180px] w-[320px];
+    }
+    
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    .hero {
+      @apply bg-[url("/hero2.svg")] h-max w-[280px];
+    }
+   
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .hero {
+      @apply bg-[93%] h-[275px];
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero {
+      @apply bg-[85%] h-[425px];
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1919px) {
+    .hero {
+      @apply bg-[90%] h-[560px];
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    .hero{
+      @apply bg-cover;
+    }
+  }
+  
